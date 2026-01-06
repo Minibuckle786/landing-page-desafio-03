@@ -1,0 +1,69 @@
+/* ===========================
+   RESET GLOBAL
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========================
+   VARIÁVEIS GLOBAIS
+=========================== */
+:root {
+    --font-primary: "Inter", sans-serif;
+
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray: #a5a7a8;
+
+    --color-primary: #2e60d3;
+    --color-primary-hover: #1f47a5;
+
+    --radius: 10px;
+    --transition: 0.3s ease-in-out;
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+}
+
+/* ===========================
+   ESTILOS BASE
+=========================== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-black);
+    color: var(--color-white);
+    width: 90vw;
+    margin: auto;
+}
+
+/* Classes utilitárias */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-primary {
+    padding: var(--space-4) var(--space-6);
+    border-radius: var(--radius);
+    font-size: 18px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.button-primary:hover {
+    background: var(--color-primary-hover);
+}
