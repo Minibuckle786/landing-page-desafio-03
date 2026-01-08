@@ -1,3 +1,94 @@
-@import url("./reset.css");
+@charset "UTF-8";
+/* ===========================
+   RESET GLOBAL
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Aqui começa o seu estilo do projeto */
+/* ===========================
+   VARIÁVEIS GLOBAIS
+=========================== */
+:root {
+  --font-primary: "Inter", sans-serif;
+  --background-branco: rgb(254, 254, 254);
+  --background-creme: rgb(248, 248, 251);
+  --color-texto-titulo-nav: rgb(43, 53, 80);
+  --color-texto-nav: rgb(82, 88, 112);
+  --color-texto-titulo-banner: rgb(255, 255, 255);
+  --color-texto-banner: rgb(241, 242, 254);
+  --background-color-button-banner: rgb(0, 77, 215);
+  --color-header-logo: rgb(38, 84, 211);
+  --color-header-nav: rgb(81, 87, 108);
+  --color-header-nav-border: rgb(83, 115, 209);
+  --radius: 10px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+}
+
+/* ===========================
+   ESTILOS BASE
+=========================== */
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--background-branco);
+  width: 90vw;
+  margin: auto;
+}
+
+/* Classes utilitárias */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-primary {
+  padding: var(--space-4) var(--space-6);
+  border-radius: var(--radius);
+  font-size: 18px;
+  background: var(--background-color-button-banner);
+  color: var(--color-texto-titulo-banner);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 390 × 844 (iPhone 12) */
+/* É o mais atual, confortável e perfeito pra desenhar o layout mobile. */
+/* CSS base = mobile */
+/* Tablet */
+/* Desktop */
+/* Desktop grande */
+.header-layout {
+  background-color: var(--background-branco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 1rem;
+}
+
+.header-nav a {
+  gap: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

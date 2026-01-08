@@ -43,6 +43,7 @@
 =========================== */
 html {
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 body {
@@ -65,4 +66,12 @@ body {
     font-size: 18px;
     background: var(--background-color-button-banner);
     color: var(--color-texto-titulo-banner);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }

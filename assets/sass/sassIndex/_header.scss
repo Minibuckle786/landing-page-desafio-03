@@ -1,0 +1,14 @@
+.header-layout {
+    background-color: var(--background-branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 1rem;
+}
+
+.header-nav a {
+    gap: 1rem;
+}
