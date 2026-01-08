@@ -9,6 +9,18 @@
     font-size: 1rem;
 }
 
-.header-nav a {
-    gap: 1rem;
+.header-nav ul {
+    gap: 2rem;
+}
+
+.header-nav li {
+    padding: var(--space-2) 0;
+}
+
+.header-nav li:active::first-line {
+    border-bottom: 2px solid var(--color-header-nav-border);
+}
+
+.header-nav li:hover {
+    border-bottom: 2px solid var(--color-header-nav-border);
 }
