@@ -24,12 +24,12 @@
   --color-header-nav: rgb(81, 87, 108);
   --color-header-nav-border: rgb(83, 115, 209);
   --radius: 10px;
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 12px;
-  --space-4: 16px;
-  --space-5: 24px;
-  --space-6: 32px;
+  --space-1: 0.4rem;
+  --space-2: 0.8rem;
+  --space-3: 1.2rem;
+  --space-4: 1.6rem;
+  --space-5: 2.4rem;
+  --space-6: 3.2rem;
 }
 
 /* ===========================
@@ -76,6 +76,11 @@ a {
 /* Tablet */
 /* Desktop */
 /* Desktop grande */
+header,
+.header-layout {
+  height: 3.5rem;
+}
+
 .header-layout {
   background-color: var(--background-branco);
   display: flex;
@@ -85,6 +90,7 @@ a {
 
 .header-logo {
   font-size: 1rem;
+  color: var(--color-header-logo);
 }
 
 .header-nav ul {
@@ -95,12 +101,13 @@ a {
   padding: var(--space-2) 0;
 }
 
-.header-nav li:active::first-line {
+.header-nav li:hover,
+.header-nav li.active {
   border-bottom: 2px solid var(--color-header-nav-border);
 }
 
-.header-nav li:hover {
-  border-bottom: 2px solid var(--color-header-nav-border);
+.header-nav:hover li.active {
+  border-bottom: none;
 }
 
 /*# sourceMappingURL=style.css.map */

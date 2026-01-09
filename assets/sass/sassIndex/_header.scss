@@ -1,3 +1,8 @@
+header,
+.header-layout {
+    height: 3.5rem;
+}
+
 .header-layout {
     background-color: var(--background-branco);
     display: flex;
@@ -7,6 +12,7 @@
 
 .header-logo {
     font-size: 1rem;
+    color: var(--color-header-logo);
 }
 
 .header-nav ul {
@@ -17,10 +23,11 @@
     padding: var(--space-2) 0;
 }
 
-.header-nav li:active::first-line {
+.header-nav li:hover,
+.header-nav li.active {
     border-bottom: 2px solid var(--color-header-nav-border);
 }
 
-.header-nav li:hover {
-    border-bottom: 2px solid var(--color-header-nav-border);
+.header-nav:hover li.active {
+    border-bottom: none;
 }
