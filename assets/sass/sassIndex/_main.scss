@@ -1,9 +1,37 @@
 .main-banner {
     width: 100vw;
-    height: 300px;
+    height: inherit;
     /* ou 100vh */
     background-image: url("../imagem/fundo_banner.png");
     background-size: cover;
     background-position: bottom;
 
+}
+
+.main-layout {
+    position: relative;
+    height: 330px;
+}
+
+.main-elementos {
+    box-sizing: border-box;
+    width: 30rem;
+    height: inherit;
+    flex-direction: column;
+    position: absolute;
+    top: 1px;
+    left: 24px;
+    align-items: flex-start;
+}
+
+.main-elementos h2 {
+    color: var(--color-texto-titulo-banner);
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.main-elementos p {
+    color: var(--color-texto-banner);
+    margin: 1rem 0;
+    font-size: 1.1rem;
 }

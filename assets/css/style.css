@@ -23,9 +23,9 @@
   --color-header-logo: rgb(38, 84, 211);
   --color-header-nav: rgb(81, 87, 108);
   --color-header-nav-border: rgb(83, 115, 209);
-  --radius: 10px;
+  --radius: 7px;
   --space-1: 0.4rem;
-  --space-2: 0.8rem;
+  --space-2: 1rem;
   --space-3: 1.2rem;
   --space-4: 1.6rem;
   --space-5: 2.4rem;
@@ -59,11 +59,14 @@ body {
 }
 
 .button-primary {
-  padding: var(--space-4) var(--space-6);
+  padding: var(--space-2) var(--space-5);
   border-radius: var(--radius);
-  font-size: 18px;
+  font-size: 14px;
   background: var(--background-color-button-banner);
   color: var(--color-texto-titulo-banner);
+  border: 0;
+  margin: 2rem 0;
+  font-weight: 500;
 }
 
 li {
@@ -116,11 +119,39 @@ header,
 
 .main-banner {
   width: 100vw;
-  height: 300px;
+  height: inherit;
   /* ou 100vh */
   background-image: url("../imagem/fundo_banner.png");
   background-size: cover;
   background-position: bottom;
+}
+
+.main-layout {
+  position: relative;
+  height: 330px;
+}
+
+.main-elementos {
+  box-sizing: border-box;
+  width: 30rem;
+  height: inherit;
+  flex-direction: column;
+  position: absolute;
+  top: 1px;
+  left: 24px;
+  align-items: flex-start;
+}
+
+.main-elementos h2 {
+  color: var(--color-texto-titulo-banner);
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+.main-elementos p {
+  color: var(--color-texto-banner);
+  margin: 1rem 0;
+  font-size: 1.1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

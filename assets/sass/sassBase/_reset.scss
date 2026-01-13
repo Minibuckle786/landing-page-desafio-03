@@ -28,10 +28,10 @@
     --color-header-nav: rgb(81, 87, 108);
     --color-header-nav-border: rgb(83, 115, 209);
 
-    --radius: 10px;
+    --radius: 7px;
 
     --space-1: 0.4rem;
-    --space-2: 0.8rem;
+    --space-2: 1rem;
     --space-3: 1.2rem;
     --space-4: 1.6rem;
     --space-5: 2.4rem;
@@ -65,11 +65,14 @@ body {
 }
 
 .button-primary {
-    padding: var(--space-4) var(--space-6);
+    padding: var(--space-2) var(--space-5);
     border-radius: var(--radius);
-    font-size: 18px;
+    font-size: 14px;
     background: var(--background-color-button-banner);
     color: var(--color-texto-titulo-banner);
+    border: 0;
+    margin: 2rem 0;
+    font-weight: 500;
 }
 
 li {
