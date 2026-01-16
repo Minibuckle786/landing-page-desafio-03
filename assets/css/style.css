@@ -67,6 +67,7 @@ body {
   border: 0;
   margin: 2rem 0;
   font-weight: 500;
+  cursor: pointer;
 }
 
 li {
@@ -126,7 +127,7 @@ header,
   background-position: bottom;
 }
 
-.main-layout {
+.main-layout-banner {
   position: relative;
   height: 330px;
 }
@@ -152,6 +153,32 @@ header,
   color: var(--color-texto-banner);
   margin: 1rem 0;
   font-size: 1.1rem;
+}
+
+.main-layout-servicos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--background-creme);
+}
+
+.main-layout-servicos-menus {
+  flex-direction: row;
+  gap: 20px;
+}
+
+.main-layout-servicos-menus div {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  flex: 1;
+}
+
+.main-layout-servicos-menus div img {
+  height: 54px;
+  width: 54px;
 }
 
 /*# sourceMappingURL=style.css.map */
