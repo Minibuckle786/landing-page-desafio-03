@@ -37,27 +37,35 @@
 }
 
 .main-layout-servicos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     background-color: var(--background-creme);
+    padding: 0 0 5px 0;
 }
 
-.main-layout-servicos-menus {
-    flex-direction: row;
-    gap: 20px;
+.main-layout-servicos h2 {
+    padding-top: 25px;
+    text-align: center;
 }
 
 .main-layout-servicos-menus div {
-    border: 1px solid black;
+    background-color: var(--background-branco);
     display: flex;
     flex-direction: column;
     padding: 10px;
-    flex: 1;
+    margin: 20px 30px;
+    height: 150px;
+    gap: 15px;
+    border-radius: 10px;
 }
 
 .main-layout-servicos-menus div img {
     height: 54px;
     width: 54px;
+}
+
+.main-layout-servicos-menus div h3 {
+    font-size: 16px;
+}
+
+.main-layout-servicos-menus div p {
+    font-size: 13px;
 }
