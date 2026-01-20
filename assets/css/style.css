@@ -23,13 +23,12 @@
   --color-header-logo: rgb(38, 84, 211);
   --color-header-nav: rgb(81, 87, 108);
   --color-header-nav-border: rgb(83, 115, 209);
-  --radius: 7px;
-  --space-1: 0.4rem;
   --space-2: 1rem;
-  --space-3: 1.2rem;
-  --space-4: 1.6rem;
   --space-5: 2.4rem;
-  --space-6: 3.2rem;
+  --space-p: 1.3rem;
+  --space-h1: 2.5rem;
+  --space-h2: 2rem;
+  --space-h3: 1.6rem;
 }
 
 /* ===========================
@@ -97,7 +96,7 @@ header,
 }
 
 .header-logo {
-  font-size: 1rem;
+  font-size: var(--space-h1);
   color: var(--color-header-logo);
 }
 
@@ -119,7 +118,6 @@ header,
 }
 
 .main-banner {
-  width: 100vw;
   height: inherit;
   /* ou 100vh */
   background-image: url("../imagem/fundo_banner.png");
@@ -143,16 +141,16 @@ header,
   align-items: flex-start;
 }
 
-.main-elementos h2 {
+.main-elementos h1 {
   color: var(--color-texto-titulo-banner);
-  font-size: 2.5rem;
+  font-size: var(--space-h1);
   line-height: 3rem;
 }
 
 .main-elementos p {
   color: var(--color-texto-banner);
   margin: 1rem 0;
-  font-size: 1.1rem;
+  font-size: var(--space-p);
 }
 
 .main-layout-servicos {
@@ -163,6 +161,7 @@ header,
 .main-layout-servicos h2 {
   padding-top: 25px;
   text-align: center;
+  font-size: var(--space-h2);
 }
 
 .main-layout-servicos-menus div {
@@ -182,21 +181,24 @@ header,
 }
 
 .main-layout-servicos-menus div h3 {
-  font-size: 16px;
+  font-size: var(--space-h3);
 }
 
 .main-layout-servicos-menus div p {
-  font-size: 13px;
+  font-size: var(--space-p);
 }
 
-.main-layout-sobre h2,
+.main-layout-sobre h2 {
+  font-size: var(--space-h2);
+}
+
 .main-layout-sobre h3 {
   margin: 30px 0;
-  font-size: 24px;
+  font-size: var(--space-h3);
 }
 
 .main-layout-sobre p {
-  font-size: 14px;
+  font-size: var(--space-p);
   margin-bottom: 30px;
 }
 
