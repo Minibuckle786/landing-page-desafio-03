@@ -94,3 +94,24 @@
 .main-layout-sobre {
     margin-bottom: 40px;
 }
+
+@media (min-width: 900px) {
+    :root {
+        --space-h1: 3rem;
+        --space-p: 1.6rem;
+        --space-2: 1.6rem;
+        --space-5: 3rem;
+    }
+
+    .main-elementos {
+        width: 60rem;
+    }
+
+    .main-elementos h1 {
+        line-height: 4rem;
+    }
+
+    .button-primary {
+        font-size: 16px;
+    }
+}

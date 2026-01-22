@@ -96,7 +96,8 @@ header,
 }
 
 .header-logo {
-  font-size: var(--space-h1);
+  font-size: 1.5rem;
+  font-weight: 900;
   color: var(--color-header-logo);
 }
 
@@ -117,6 +118,19 @@ header,
   border-bottom: none;
 }
 
+/* Tablet */
+@media (min-width: 900px) {
+  header,
+  .header-layout {
+    height: 5.5rem;
+  }
+  .header-logo {
+    font-size: 2rem;
+  }
+  .header-layout li {
+    font-size: 1.4rem;
+  }
+}
 .main-banner {
   height: inherit;
   /* ou 100vh */
@@ -213,6 +227,23 @@ header,
   margin-bottom: 40px;
 }
 
+@media (min-width: 900px) {
+  :root {
+    --space-h1: 3rem;
+    --space-p: 1.6rem;
+    --space-2: 1.6rem;
+    --space-5: 3rem;
+  }
+  .main-elementos {
+    width: 60rem;
+  }
+  .main-elementos h1 {
+    line-height: 4rem;
+  }
+  .button-primary {
+    font-size: 16px;
+  }
+}
 .footer-layout {
   background-color: rgb(44, 58, 94);
   padding: 20px;
