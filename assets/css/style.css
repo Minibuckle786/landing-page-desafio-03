@@ -77,12 +77,6 @@ a {
   text-decoration: none;
 }
 
-/* 390 × 844 (iPhone 12) */
-/* É o mais atual, confortável e perfeito pra desenhar o layout mobile. */
-/* CSS base = mobile */
-/* Tablet */
-/* Desktop */
-/* Desktop grande */
 header,
 .header-layout {
   height: 3.5rem;
@@ -118,19 +112,6 @@ header,
   border-bottom: none;
 }
 
-/* Tablet */
-@media (min-width: 900px) {
-  header,
-  .header-layout {
-    height: 5.5rem;
-  }
-  .header-logo {
-    font-size: 2rem;
-  }
-  .header-layout li {
-    font-size: 1.4rem;
-  }
-}
 .main-banner {
   height: inherit;
   /* ou 100vh */
@@ -227,23 +208,6 @@ header,
   margin-bottom: 40px;
 }
 
-@media (min-width: 900px) {
-  :root {
-    --space-h1: 3rem;
-    --space-p: 1.6rem;
-    --space-2: 1.6rem;
-    --space-5: 3rem;
-  }
-  .main-elementos {
-    width: 60rem;
-  }
-  .main-elementos h1 {
-    line-height: 4rem;
-  }
-  .button-primary {
-    font-size: 16px;
-  }
-}
 .footer-layout {
   background-color: rgb(44, 58, 94);
   padding: 20px;
@@ -261,6 +225,79 @@ header,
 
 .footer-layout nav {
   display: none;
+}
+
+/* 390 × 844 (iPhone 12) */
+/* É o mais atual, confortável e perfeito pra desenhar o layout mobile. */
+/* CSS base = mobile */
+/* Tablet */
+@media (min-width: 900px) {
+  :root {
+    --space-h1: 3rem;
+    --space-p: 1.6rem;
+    --space-2: 1.6rem;
+    --space-5: 3rem;
+  }
+  header,
+  .header-layout {
+    height: 5.5rem;
+  }
+  .header-logo {
+    font-size: 2rem;
+  }
+  .header-layout li {
+    font-size: 1.4rem;
+  }
+  .main-elementos {
+    width: 60rem;
+  }
+  .main-elementos h1 {
+    line-height: 4rem;
+  }
+  .button-primary {
+    font-size: 16px;
+  }
+}
+/* Desktop grande */
+@media (min-width: 1200px) {
+  .main-layout-servicos-menus {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-layout-servicos-menus-div {
+    flex: 1;
+  }
+  .main-layout-servicos-menus div {
+    height: 190px;
+    padding: 15px;
+  }
+  .main-layout-sobre {
+    display: flex;
+    padding: 30px;
+  }
+  .main-layout-sobre-texto {
+    width: 60rem;
+    margin: 0;
+  }
+  .main-layout-sobre img {
+    height: 300px;
+    width: 350px;
+  }
+  .footer-layout {
+    height: 70px;
+    justify-content: space-evenly;
+  }
+  .footer-layout div {
+    font-size: 13px;
+  }
+  .footer-layout nav {
+    display: inline;
+  }
+  .footer-layout img {
+    height: 32px;
+    width: 32px;
+    margin-left: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
